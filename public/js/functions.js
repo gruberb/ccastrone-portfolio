@@ -1,6 +1,4 @@
 $(function() {
-	var currentVisible = {};
-
 	var showText = function(element) {
 		hideOpenOnes(function() {
 			$($(element).prev()[0]).addClass("visible");
@@ -35,5 +33,33 @@ $(function() {
 
 	$(".close").click(function(element) {
 		hideText(element.currentTarget, $($(element.currentTarget).closest('div').next()[0]));
+	});
+
+	$(".right").click(function(element) {
+		var id = $(element.currentTarget).prev().attr('id');
+		var current = $(element.currentTarget).prev().attr('src');
+		var pictures = images[id];
+
+		var fileNameIndex = current.lastIndexOf("/") + 1;
+		var filename = current.substr(fileNameIndex);
+
+		var next = pictures[($.inArray(filename, pictures) + 1) % pictures.length];
+
+		$(element.currentTarget).prev().attr('src');
+		$($(element.currentTarget).prev()).attr("src", "./assets/images/" + next);
+	});
+
+		$(".left").click(function(element) {
+		var id = $(element.currentTarget).next().attr('id');
+		var current = $(element.currentTarget).next().attr('src');
+		var pictures = images[id];
+
+		var fileNameIndex = current.lastIndexOf("/") + 1;
+		var filename = current.substr(fileNameIndex);
+
+		var prev = pictures[($.inArray(filename, pictures) - 1 + pictures.length) % pictures.length];
+
+		$(element.currentTarget).next().attr('src');
+		$($(element.currentTarget).next()).attr("src", "./assets/images/" + prev);
 	});
 });
