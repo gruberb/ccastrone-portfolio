@@ -13,11 +13,8 @@ img {
 }
 
 .row > .columns:hover .hover-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  transition: background-color 0.4s ease;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .row > .columns:hover .hover-container .companyName {
@@ -30,12 +27,19 @@ img {
   transition: opacity 0.4s ease;
 }
 
+.row > .columns:hover .left,
+.row > .columns:hover .right {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
 .hover-container {
   position: absolute;
+  opacity: 1;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: background-color 0.4s ease;
+  background: rgba(0, 0, 0, 0.8);
+  transition: opacity 0.4s ease;
 }
 
 .hover-container .companyName {
@@ -52,7 +56,7 @@ img {
 }
 
 .left {
-  display: none;
+  opacity: 0;
   background-image: url('/assets/icons/left.png');
   width: 45px;
   height: 45px;
@@ -60,11 +64,12 @@ img {
   position: absolute;
   left: 20px;
   top: 40%;
-  transition: background-color 0.4s ease;
+  transition: opacity 0.4s ease;
+  cursor: pointer;
 }
 
 .right {
-  display: none;
+  opacity: 0;
   background-image: url('/assets/icons/right.png');
   width: 45px;
   height: 45px;
@@ -72,14 +77,8 @@ img {
   position: absolute;
   right: 20px;
   top: 40%;
-  transition: background-color 0.4s ease;
-}
-
-.row > .columns:hover .left,
-.row > .columns:hover .right {
+  transition: opacity 0.4s ease;
   cursor: pointer;
-  display: block;
-  transition: background-color 0.4s ease;
 }
 
 .readMore {
@@ -100,17 +99,22 @@ img {
 }
 
 .text-container {
-  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
+  background: rgba(255, 255, 255, 0.5);
   top: 0;
-  border: 15px rgba(204, 204, 204, 0.4) solid;
-  padding: 20px;
-  background: white;
+  padding: 15px;
+  display: none;
 }
 
-.text-container h1 {
+.text {
+  padding: 15px;
+  background: white;
+  height: 100%;
+}
+
+.text h1 {
   opacity: 0.8;
   font-family: Chivo;
   font-size: 48px;
@@ -120,7 +124,7 @@ img {
   margin-bottom: 0px;
 }
 
-.text-container h5 {
+.text h5 {
   opacity: 0.8;
   font-family: Chivo;
   font-size: 30px;
@@ -128,7 +132,7 @@ img {
   color: #000000;
 }
 
-.text-container p {
+.text p {
   opacity: 0.8;
   font-family: Chivo;
   font-size: 30px;
@@ -160,4 +164,6 @@ img {
   height: 24px;
   background-size: cover;
   cursor: pointer;
+  right: 35px;
+  top: 35px;
 }
