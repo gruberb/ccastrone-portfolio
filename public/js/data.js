@@ -1,10 +1,10 @@
 var images = {
-  "ecosia": ["android-browser.png", "ecosia_2_postits.jpg"],
-  "babbel": ["babbel_1_postcard.jpg", "babbel_2_mobile_ios.jpg", "babbel_3_italianize.jpg"],
-  "restart": ["restart_1_logos.jpg", "restart_2_fotos.jpg"],
-  "kulturven": ["Kulturven_1_desktop.jpg", "kulturven_2_icons.jpg"],
-  "movement": ["RTM_1_rutekort.jpg", "RTM_2_bog_jacky.jpg", "RTM_3_bog_ahmed.jpg"],
+  "ecosia": ["ecosia_1.gif", "ecosia_2.gif", "ecosia_3.jpg"],
+  "babbel": ["babbel_1.gif", "babbel_2.jpg", "babbel_3.jpg", "babbel_4.jpg"],
+  "restart": ["restart_1.jpg", "restart_2.jpg"],
+  "kulturven": ["Kulturven_1.jpg", "kulturven_2.jpg"],
+  "movement": ["RTM_1.jpg", "RTM_2.jpg", "RTM_3.jpg"],
   "officina": ["officina_1.jpg", "officina_2.jpg"],
-  "lingoda": ["Lingoda_1_interface.jpg", "lingoda_2.jpg"],
-  "twentynine": ["IAT_1_salma.jpg", "IAT_2_menna.jpg", "IAT_3_dawlat.jpg"]
+  "lingoda": ["Lingoda_1.jpg", "lingoda_2.jpg"],
+  "twentynine": ["IAT_1.jpg", "IAT_2.jpg", "IAT_3.jpg"]
 }
