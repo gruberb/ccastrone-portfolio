@@ -69,7 +69,7 @@ img {
   background-size: cover;
   position: absolute;
   left: 20px;
-  top: 40%;
+  top: 46%;
   transition: opacity 0.4s ease;
   cursor: pointer;
 }
@@ -82,7 +82,7 @@ img {
   background-size: cover;
   position: absolute;
   right: 20px;
-  top: 40%;
+  top: 46%;
   transition: opacity 0.4s ease;
   cursor: pointer;
 }
@@ -116,9 +116,13 @@ img {
 }
 
 .text {
-  padding: 15px;
   background: white;
   height: 100%;
+  padding-left: 50px;
+  background: white;
+  height: 100%;
+  padding-top: 15px;
+  padding-right: 30px;
 }
 
 .text h1 {
