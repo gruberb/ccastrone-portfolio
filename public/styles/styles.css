@@ -153,6 +153,9 @@ img {
 }
 
 .close {
+  background-image: url('/assets/icons/close.png');
+  width: 24px;
+  height: 24px;
+  background-size: cover;
   cursor: pointer;
-  padding:
 }
