@@ -148,6 +148,48 @@ img {
   margin-top: 25px;
 }
 
+@media (max-width: 680px) {
+  .text h1 {
+    font-size: 43px;
+  }
+
+  .text h5 {
+    font-size: 25px;
+  }
+
+  .text p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 580px) {
+  .text h1 {
+    font-size: 37px;
+  }
+
+  .text h5 {
+    font-size: 20px;
+  }
+
+  .text p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text h1 {
+    font-size: 32px;
+  }
+
+  .text h5 {
+    font-size: 15px;
+  }
+
+  .text p {
+    font-size: 15px;
+  }
+}
+
 .close {
   display: block;
   position: absolute;
