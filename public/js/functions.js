@@ -33,6 +33,11 @@ $(function() {
 		showText(element.currentTarget);
 	});
 
+	$('.project-picture').click(function(element) {
+		console.log('click', element);
+		showText(element.currentTarget);
+	});
+
 	$('.close').click(function(element) {
 		hideText(element.currentTarget, $($($($(element.currentTarget)[0]).parent()).parent()).next()[0]);
 	});
