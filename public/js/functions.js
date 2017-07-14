@@ -43,7 +43,6 @@ $(function() {
 	});
 
 	$('.right').click(function(element) {
-		console.log(element.currentTarget);
 		var id = $(element.currentTarget).prev().attr('id');
 		var current = $(element.currentTarget).prev().attr('src');
 		var pictures = images[id];
